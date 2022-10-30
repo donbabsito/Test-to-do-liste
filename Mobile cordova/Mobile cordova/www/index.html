@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+
+    <title>Hello World</title>
+
+</head>
+
+<body>
+    <div data-role="header">
+        <h3>TODO APP LIST</h3>
+    </div>
+    <div data-role="content">
+        <form>
+            <input type="text" id="task" placeholder="Ajouter une tache" />
+            <input class="buttonClick" value="Ajouter" onclick="addTask()">
+            <input class="buttonClick" value="Réinitialisation" onclick="reinitialiser()">
+        </form>
+        <ul data-role="listview" id="taskList" data-inset="true">
+
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h1>By Babacar &COPY; MAI 2021</h1>
+    </div>
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="js/index.js"></script>
+
+</html>
